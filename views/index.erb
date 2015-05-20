@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit Your Awesome Link</title>
+  </head>
+
+  <style>
+    body {text-align: center}
+    body {background-color:lightgray}
+    body h1 {color: red}
+  </style>
+
+  <body>
+    <h1>The Best Articles on da Web</h1>
+
+    <% articles.each do |article| %>
+      <br>
+      <strong>Title:</strong> <a href="http://<%= article[0] %>"><%= article[1]%></a><br>
+      <strong>Description:</strong> <%= article[2]%><br>
+      <br>
+    <% end %>
+
+    <button><a href="/articles/new">Submit a Link!</a></button><br>
+
+  </body>
+</html>

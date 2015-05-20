@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit Your Awesome Link</title>
+  </head>
+
+  <style>
+    body {text-align: center}
+    body {background-color:lightgray}
+    body h1 {color: red}
+  </style>
+
+  <body>
+    <h1>Submit The Best Articles on da Web</h1>
+    <form action = "/articles/new" method = "post">
+      Link:<br>
+      <label for="new_article"></label>
+      <input type="text" id="new_article" name="new_article">
+      <br>
+      Title:<br>
+      <input type="text" id="title" name="title">
+      <br>
+      Description:<br>
+      <input type="paragraph" id="description" name="description">
+      <br>
+      <input type="submit">
+    </form>
+    <br>
+    <button><a href="/articles">Go back!</a></button><br>
+
+  </body>
+
+</html>
+
+<!-- articles.each do |article|
+  puts article
+end -->
