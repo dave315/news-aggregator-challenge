@@ -8,11 +8,11 @@
   <body>
     <h1>The Best Articles on da Web</h1>
 
-    <button><a href="/articles/new">Submit a Link!</a></button><br>
+    <button class = "btn"><a href="/articles/new">Submit a Link!</a></button><br>
 
-    <% articles.each do |article| %>
+    <% @articles.each do |article| %>
       <br>
-      <strong>Title:</strong> <a href="<%= article["url"] %>" target="_blank"><%= article["name"]%></a><br>
+      <strong>Title:</strong> <a href="<%= article["url"] %>" target="_blank"><%= article["title"]%></a><br>
       <strong>Description:</strong> <%= article["description"]%><br>
       <br>
     <% end %>

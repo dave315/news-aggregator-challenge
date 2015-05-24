@@ -9,7 +9,7 @@
     <h3 id ="error"><%=error_message%></h3>
 
     <h1>Submit The Best Articles on da Web</h1>
-    <form action = "/articles/new" method = "post">
+    <form action = "/articles/new" method = "post" class = "form-style-6">
       Link:<br>
       <label for="article_url"></label>
       <input type="url" id="article_url" name="article_url" placeholder="http://" value="<%=url_resubmit%>" required>
@@ -18,12 +18,12 @@
       <input type="text" id="title" name="title" placeholder="Article title..." value="<%=title_resubmit %>"required>
       <br>
       Description:<br>
-      <input type="" id="description" name="description" placeholder="Description..." maxlength=20 value="<%=description_resubmit %>" required>
+      <input type="text" id="description" name="description" placeholder="Description..." maxlength=20 value="<%=description_resubmit %>" required>
       <br>
       <input type="submit">
     </form>
     <br>
-    <button><a href="/articles">Go back!</a></button><br>
+    <button class = "btn"><a href="/articles">Go back!</a></button><br>
   </body>
 
 </html>
