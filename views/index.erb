@@ -2,25 +2,20 @@
 <html>
   <head>
     <title>Submit Your Awesome Link</title>
+    <link rel="stylesheet" href="/home.css">
   </head>
-
-  <style>
-    body {text-align: center}
-    body {background-color:lightgray}
-    body h1 {color: red}
-  </style>
 
   <body>
     <h1>The Best Articles on da Web</h1>
 
+    <button><a href="/articles/new">Submit a Link!</a></button><br>
+
     <% articles.each do |article| %>
       <br>
-      <strong>Title:</strong> <a href="http://<%= article[0] %>"><%= article[1]%></a><br>
-      <strong>Description:</strong> <%= article[2]%><br>
+      <strong>Title:</strong> <a href="<%= article["url"] %>" target="_blank"><%= article["name"]%></a><br>
+      <strong>Description:</strong> <%= article["description"]%><br>
       <br>
     <% end %>
-
-    <button><a href="/articles/new">Submit a Link!</a></button><br>
 
   </body>
 </html>

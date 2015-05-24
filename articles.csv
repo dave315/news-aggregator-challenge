@@ -1,7 +1,11 @@
-espn.go.com/nba/playoffs/2015/story/_/id/12920131/stephen-curry-golden-state-warriors-fined-5000-game-1-flop,Steph Curry Fine,Steph Curry is pissed about the flop!
-www.reddit.com/tb/36n658,Public Bathroom Phobia,Don't be afraid of public bathrooms ever again!
-"","",""
-Google,google.com,Search stuff!
-Google.com,Google,Search stuff!
-test,"",test
-whatever.com,Whatev,The best site
+url,name,description
+http://espn.com,espn,test
+http://espn.com,ESPN,asdjf;lkajsd ;lfa;sldkafsd fasdf
+http://espn.com,test,hello
+http://coffee.com,title,description
+http://dogs.com,title,description
+http://hello.com,hello,say hello
+,GitHub,Push yo' code!
+http://github.com,Github,Push yo' code!
+http://www.thecommunikey.com/,CommuniKey Membership,The best discounts!
+http://thecommunikey.com/,CommuniKey Membership,Only $1.99/month!

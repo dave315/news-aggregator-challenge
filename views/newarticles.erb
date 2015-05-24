@@ -2,36 +2,28 @@
 <html>
   <head>
     <title>Submit Your Awesome Link</title>
+    <link rel="stylesheet" href="/home.css">
   </head>
 
-  <style>
-    body {text-align: center}
-    body {background-color:lightgray}
-    body h1 {color: red}
-  </style>
-
   <body>
+    <h3 id ="error"><%=error_message%></h3>
+
     <h1>Submit The Best Articles on da Web</h1>
     <form action = "/articles/new" method = "post">
       Link:<br>
-      <label for="new_article"></label>
-      <input type="text" id="new_article" name="new_article">
+      <label for="article_url"></label>
+      <input type="url" id="article_url" name="article_url" placeholder="http://" value="<%=url_resubmit%>" required>
       <br>
       Title:<br>
-      <input type="text" id="title" name="title">
+      <input type="text" id="title" name="title" placeholder="Article title..." value="<%=title_resubmit %>"required>
       <br>
       Description:<br>
-      <input type="paragraph" id="description" name="description">
+      <input type="" id="description" name="description" placeholder="Description..." maxlength=20 value="<%=description_resubmit %>" required>
       <br>
       <input type="submit">
     </form>
     <br>
     <button><a href="/articles">Go back!</a></button><br>
-
   </body>
 
 </html>
-
-<!-- articles.each do |article|
-  puts article
-end -->
